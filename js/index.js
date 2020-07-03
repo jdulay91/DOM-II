@@ -1,7 +1,7 @@
 // Your code goes here
 //target element
 const header = document.querySelector('header');
-
+ const navTags = document.querySelectorAll('.nav-link');
 //change background color
 
 
@@ -23,21 +23,31 @@ const header = document.querySelector('header');
 // })
 
 // //click
-const navTags = document.querySelectorAll('.nav-link');
+
 
 // for(let i=0 ; i<navTags.length; i++){
 //     navTags[i].addEventListener('click',function(){      
 //         header.style.backgroundColor='green';
-//         navTags.preventDefault();
+        
 //     })
 // }
-
 //prevent event
 // navTags[0].addEventListener('click',function(e){ 
 //     e.preventDefault();
 //     header.style.backgroundColor='green';    
-    
 // })
+
+//PREVENT EVENT PROPAGATION
+
+// function eventPropagation (e){ 
+//   header.style.backgroundColor="black";
+//   e.stopPropagation();
+// }
+// header.addEventListener('click',function(){
+//     header.style.backgroundColor="green";
+// })
+// navTags.forEach(navTag => navTag.addEventListener('click',eventPropagation,false))
+
 // //dblclick
 // for(let i=0 ; i<navTags.length; i++){
 //     navTags[i].addEventListener('dblclick',function(){
