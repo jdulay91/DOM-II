@@ -39,16 +39,24 @@ const header = document.querySelector('header');
 
 //PREVENT EVENT PROPAGATION
 
-// function eventPropagation (e){ 
-//   header.style.backgroundColor="black";
-//   e.stopPropagation();
-// }
-// header.addEventListener('click',function(){
-//     header.style.backgroundColor="green";
-// })
-// navTags.forEach(navTag => navTag.addEventListener('click',eventPropagation,false))
 
-// //dblclick
+// header.addEventListener('click',function(){
+//     header.style.backgroundColor="#FEC89A";
+// })
+
+// navTags.forEach(navTag => navTag.addEventListener('click',function(e){
+//     header.style.backgroundColor ="#606C38";
+//     e.stopPropagation();
+
+// }))
+// function eventPropagation (e){ 
+//     header.style.backgroundColor= "#606C38";
+//     e.stopPropagation();
+// }
+
+// navTags.forEach(navTag => navTag.addEventListener('click',eventPropagation,false));
+
+//dblclick
 // for(let i=0 ; i<navTags.length; i++){
 //     navTags[i].addEventListener('dblclick',function(){
        
